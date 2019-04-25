@@ -1,5 +1,16 @@
 ﻿@{
     Layout = null;
+    var pageTitle = "Comic Books Details View";
+    var seriesTitle = "The Amazing Spider-Man";
+    var issueNumber = 700;
+    var description = "<p>Final issue! Witness the final hours of Doctor Octopus' life and his one, last, great act of revenge! Even if Spider-Man survives... <strong>will Peter Parker?</strong></p>";
+    var artists = new String[]
+    {
+        "Script: Scorcese",
+        "Director: Rober Deniro",
+        "Music: Tu-Pac"
+    };
+
 }
 
 <!DOCTYPE html>
@@ -7,11 +18,16 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width" />
-    <title></title>
+    <title>@pageTitle</title>
 </head>
 <body>
     <div>
-        <h1>Hello from our Details View</h1>
+        <h1>@seriesTitle</h1>
+        <h2>Issue #@issueNumber</h2>
+        <div>@Html.Raw(description)</div>
+        <h5>Artists:</h5>
+        <div>@artists</div>
+
     </div>
 </body>
 </html>
