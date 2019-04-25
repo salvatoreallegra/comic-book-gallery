@@ -23,9 +23,7 @@ namespace ComicBookGallery.Controllers
                     new Artist() {Name = "RuPaul", Role = "Makeup Artist"}
 
                 }
-
-
-
+                               
             };
 
           
